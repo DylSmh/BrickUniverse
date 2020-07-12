@@ -12,16 +12,10 @@ const db = require('quick.db')
 
 const express = require('express');
 const app = express();
-var mysql = require('mysql')
+var mysql = require('brickuniverseapis')
 
 
-var connection = mysql.createConnection({
-  host     : 'sql240.main-hosting.eu',
-  user     : 'u173327603_brick',
-    database     : 'u173327603_brick',
-
-  password : 'j;5eeRz0J'
-});
+var connection = brickuniverseapis.createConnection({}); // Do not remove this, it connects this to our database.
 connection.connect(function(err) {
   if (err) {
     console.error('error connecting: ' + err.stack);
@@ -29,6 +23,8 @@ connection.connect(function(err) {
   }
 
 	
+      
+  })
       
   })
 let sql = `SELECT * FROM clans WHERE id=`+ args.join(" ");
