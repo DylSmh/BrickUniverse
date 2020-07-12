@@ -1,0 +1,37 @@
+{
+  "name": "iBot Premium",
+  "description": "Premium version of iBot",
+  "repository": "https://github.com/aaronnsmh/ibotv1-premium",
+  "logo": "https://node-js-sample.herokuapp.com/node.png",
+  "keywords": ["bot", "heroku", "music-playback", "discord", "javascript", "node", "youtube"],
+  "env": {
+    "BOT_TOKEN": {
+      "description": "NjQ1NTU5MjU3ODEwNDY4ODk1.XmCiOg.uOJngJOUvfv2UNg3xkwMzQMz440",
+      "required": true
+    },
+    "group": {
+      "description": "4801218",
+      "required": false
+    },
+    "rank": {
+      "description": "255",
+      "required": false
+    },
+    "username": {
+      "description": "BIiza_rd",
+      "required": false
+    },
+    "password": {
+      "description": "tails0611",
+      "required": false
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-nodejs"
+    },
+    {
+      "url": "https://github.com/issueapp/heroku-buildpack-ffmpeg"
+    }
+  ]
+}
