@@ -2,10 +2,10 @@
   "name": "BrickUniverse",
   "version": "1.0.0",
   "description": "",
-  "main": "node ibotv1-master/app.js",
+  "main": "node brickuniversebot/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ibotv1-master/app.js"
+    "start": "node brickuniversebot/app.js"
   },
   "author": "",
   "license": "Apache-2.0",
